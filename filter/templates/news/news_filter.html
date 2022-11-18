@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row justify-content-center">
+     <div class="col-lg-8 p-5">
+       {% for news in news_filter %}
+       <h3>{{ news.title }}</h3>
+       <p>{{ news.author }} | {{ news.post_date}}</p>
+       <p>{{ news.description }}</p>
+       {% endfor %}
+     </div>
+    </div>
+   </div>
